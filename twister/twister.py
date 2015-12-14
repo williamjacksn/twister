@@ -6,7 +6,8 @@ import time
 
 
 def parse_args():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description='Simulate a Twister spinner',
+                                     epilog='Press Ctrl+C to quit')
 
     air_help = 'include \'in the air\' as a valid action'
     parser.add_argument('-a', '--air', action='store_true', help=air_help)
@@ -44,7 +45,7 @@ def main():
     if args.talk:
         print('Talking is activated')
 
-    print('**')
+    print('Press Ctrl+C to quit\n**')
 
     while True:
         try:

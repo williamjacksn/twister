@@ -1,5 +1,7 @@
 `twister` replaces your Twister spinner.
 
+Install with `pip install https://github.com/williamjacksn/twister/archive/master.zip`
+
     usage: twister [-h] [-a] [-d [DELAY]] [-t]
 
     optional arguments:
